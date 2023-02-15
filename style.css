@@ -1,0 +1,118 @@
+*{box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #1d1d1e;
+    color: #ffff;
+}
+.options {
+    display: flex;
+    gap: 10px;
+}
+.alaram_ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#000000, transparent);
+    flex-direction: column;
+    gap: 30px;
+}
+.alaram_ring img {
+    width: 250px;
+}
+.tot_cont {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    text-align: center;
+}
+.time {
+    background: #2c2c2d;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+.select_item {
+    background: #2c2c2d;
+    border: none;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.select_item:focus{
+    border: none;
+    outline: none;
+}
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 12px;
+}
+.btns button{
+    background: #2ece57;
+    border: none;
+    font-family: poppins;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.alram_st_time {
+    color: #e99208;
+    font-weight: 400;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.stop {
+    background: #db3013;
+    padding: 5px 20px;
+    font-family: poppins;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    color: #ffff;
+    font-weight: 300;
+    cursor: pointer;
+}
+.stop:hover {
+    background: #a5230d;
+}
+.err_msg{
+    color: #ff4700;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.show_msg {
+    display: none;
+    background: #2c2c2d;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}

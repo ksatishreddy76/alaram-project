@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="./icon.png">
+    <title>Alaram Time</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="tot_cont">
+        <div class="alaram_cont">
+            <div class="time_plc">
+                <h1 class="time" id="time"></h1>
+            </div>
+            <div class="alrm_plc">
+                <div class="options">
+                    <div class="option_hrs">
+                        <select name="" id="hours" class="select_item"></select>
+                        <label for="hours">H</label>
+                    </div>
+                    <div class="option_min">
+                        <select name="" id="minutes" class="select_item"></select>
+                        <label for="minutes">M</label>
+                    </div>
+                    <div class="option_sec">
+                        <select name="" id="seconds" class="select_item"></select>
+                        <label for="seconds">S</label>
+                    </div>
+                    <div class="option_ampm">
+                        <select name="" id="ampm" class="select_item">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="alaram_ring" id="alaram_ring">
+            <img src="./alram_clock.png" alt="">
+            <button class="stop" onclick="stopAlaram()">Stop Alaram</button>
+        </div>
+       
+        <div class="btns">
+            <button onclick="setAlaram()" >Set Alaram</button>
+            <button onclick="clearAlaram()">Clear Alaram</button>
+        </div>
+
+        <div class="alram_st_time" id="alram_st_time">
+            No Alaram
+        </div>
+
+        <div class="error_Message">
+            <p class="err_msg" id="err_msg"></p>
+        </div>
+        <div class="show_msg" id="show_msg">
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
